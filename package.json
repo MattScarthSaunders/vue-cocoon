@@ -6,8 +6,8 @@
   "scripts": {
     "build": "tsc",
     "docs": "typedoc",
-    "preversion": "npm run build && npm run docs",
-    "postversion": "git push origin main && git push origin --tags"
+    "preversion": "npm run build",
+    "postversion": "git push origin main && git push origin --tags && npm publish"
   },
   "peerDependencies": {
     "vue": "^3.2.0"
