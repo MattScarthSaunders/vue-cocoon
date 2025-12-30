@@ -1,3 +1,32 @@
+# Cocoon
+
+**A lightweight dependency injection system for Vue 3**  
+
+Cocoon provides a simple, TypeScript-friendly way to register and consume services in your Vue 3 app, with optional global access and lazy initialization. Works with both `<script setup>` and the Options API.
+
+---
+
+## Features
+
+- Easy dependency registration via `registerDeps()`  
+- Lazy service instantiation  
+- Optional global function access in components  
+- Full TypeScript support and typing for injected services  
+- Compatible with `<script setup>` and Options API  
+- Clean DX with minimal boilerplate  
+
+---
+
+## Installation
+
+```bash
+npm install vue-cocoon
+# or
+yarn add vue-cocoon
+```
+
+### Minimal example
+
 ```
 // main.ts
 import { createApp } from "vue"
@@ -21,10 +50,9 @@ app.mount("#app")
 ```
 // component.vue
 <script setup lang="ts">
-import { getDeps } from "@cocoon"
+import { deps } from "@cocoon"
 
-// Automatically inferred
-const { userService, authService } = getDeps()
+const { userService, authService } = deps()
 
 userService.login()
 authService.logout()

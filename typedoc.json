@@ -1,0 +1,15 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "out": "docs",
+  "name": "Cocoon",
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "hideGenerator": true,
+  "includeVersion": true,
+  "readme": "README.md",
+  "tsconfig": "tsconfig.json",
+  "categorizeByGroup": true,
+  "theme": "default",
+  "entryPointStrategy": "expand"
+}
