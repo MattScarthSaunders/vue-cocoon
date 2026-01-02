@@ -1,6 +1,6 @@
 # Cocoon
 
-**A lightweight dependency injection system for Vue 3**  
+**A lightweight DI wrapper for Vue 3**  
 
 Cocoon provides a simple, TypeScript-friendly way to register and consume services in your Vue 3 app, with optional global access and lazy initialization. Works with both `<script setup>` and the Options API.
 
